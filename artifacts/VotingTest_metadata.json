@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "candidatesVotedCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "getVotedCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ETHEREUM_WORKSPACE\\contracts\\Votiing_test.sol": "VotingTest"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ETHEREUM_WORKSPACE\\contracts\\Votiing_test.sol": {
+			"keccak256": "0x841e47ede175bde05681c4bd61334f3ffb50ec179073cd72b5d15c7b4441c6ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://16a4f8e9719cf3c23fb975bae139844a005eb5eab97a7df3b7527678a8af67a0",
+				"dweb:/ipfs/QmXLgcsuq2o2AjoaeBekQpxphtXTMgCV32aD2gawwEDQq3"
+			]
+		}
+	},
+	"version": 1
+}
