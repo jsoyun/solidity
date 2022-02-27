@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "enum lec38.CarStatus",
+						"name": "_carStatus",
+						"type": "uint8"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_carStatusInInt",
+						"type": "uint256"
+					}
+				],
+				"name": "carCurrentStatus",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "CheckStatus",
+				"outputs": [
+					{
+						"internalType": "enum lec38.CarStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DrivingCar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "StopCar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "carStatus",
+				"outputs": [
+					{
+						"internalType": "enum lec38.CarStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "turnOffCar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "turnOnCar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lec38.sol": "lec38"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lec38.sol": {
+			"keccak256": "0x3be95e9cdba0f52373028a2ce4035006073c3674811afb80b719079a32312d90",
+			"urls": [
+				"bzz-raw://4a7d98ac0206531dcfff637b1c34d3e877461f163ab05bc5280de5bf62c9e859",
+				"dweb:/ipfs/QmUWMVJTLKVjuZU7LqmR6Nuh3kGZrSYdsbYvqcqgQes5Vs"
+			]
+		}
+	},
+	"version": 1
+}

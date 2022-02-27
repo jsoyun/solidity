@@ -1,0 +1,96 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_err",
+						"type": "string"
+					}
+				],
+				"name": "catchOnly",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "playTryCatch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "simple",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lec28.sol": "runner2"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lec28.sol": {
+			"keccak256": "0x59443bb7b01a28a3b50e2a2af4a1ccb8925d969556d75d9d2bb1d0aa967aa7a1",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7388af4124dc53e75a591ab89b271a6f3596ea43bada11795f36bffebeda9473",
+				"dweb:/ipfs/QmUmW3wbUnqA59XTtLT7iW9yGx7cTyDTPijMv2tBgoFXq1"
+			]
+		}
+	},
+	"version": 1
+}

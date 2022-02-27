@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_err",
+						"type": "string"
+					}
+				],
+				"name": "catchErr",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "_err",
+						"type": "bytes"
+					}
+				],
+				"name": "catchLowLevelErr",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_err",
+						"type": "uint256"
+					}
+				],
+				"name": "catchPanic",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "mathInstance",
+				"outputs": [
+					{
+						"internalType": "contract math",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					}
+				],
+				"name": "playTryCatch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/lec27.sol": "runner"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lec27.sol": {
+			"keccak256": "0x8fc11d14003e11cc8b89e0a1fe2e28486e0a9a1831ae43723d50f3a3f6cc5883",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://de22ebfa7d66ae9fdf6c59c53b6774f53048db90d21f5ceea111df7bf25631b7",
+				"dweb:/ipfs/QmYEViRfzB9WXVfRpSuaPcWGNdFo7hX3aj9K682RfNugQY"
+			]
+		}
+	},
+	"version": 1
+}
