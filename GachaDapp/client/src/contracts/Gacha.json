@@ -1,0 +1,946 @@
+{
+  "contractName": "Gacha",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "ShowItem",
+      "outputs": [
+        {
+          "internalType": "string[10]",
+          "name": "",
+          "type": "string[10]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"ShowItem\",\"outputs\":[{\"internalType\":\"string[10]\",\"name\":\"\",\"type\":\"string[10]\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Gacha.sol\":\"Gacha\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Gacha.sol\":{\"keccak256\":\"0xf41fe6ed1477d9d81aabbc96176904b495b6c7bd9709fcab8e341c7af3e9a26f\",\"urls\":[\"bzz-raw://38c88ec31e3bac366f8773c20d3457daa09c8667230f3e701cea97a06cb05d29\",\"dweb:/ipfs/QmQet5CjweXixckXTS8xuPkpyWfxeMpCfeA8UUtFEFEZvS\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506106dc806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80630742da0014610030575b600080fd5b61003861004e565b60405161004591906105ea565b60405180910390f35b610056610394565b6040518061014001604052806040518060400160405280600381526020017f6f6e65000000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600381526020017f74776f000000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600581526020017f746872656500000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600481526020017f666f75720000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600481526020017f666976650000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600381526020017f736978000000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600581526020017f736576656e00000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600581526020017f656967687400000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600481526020017f6e696e650000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600381526020017f74656e0000000000000000000000000000000000000000000000000000000000815250815250600090600a6102be9291906103bc565b506000600a80602002604051908101604052809291906000905b8282101561038b578382018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103775780601f1061034c57610100808354040283529160200191610377565b820191906000526020600020905b81548152906001019060200180831161035a57829003601f168201915b5050505050815260200190600101906102d8565b50505050905090565b604051806101400160405280600a905b60608152602001906001900390816103a45790505090565b82600a81019282156103fe579160200282015b828111156103fd5782518290805190602001906103ed92919061040f565b50916020019190600101906103cf565b5b50905061040b919061048f565b5090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061045057805160ff191683800117855561047e565b8280016001018555821561047e579182015b8281111561047d578251825591602001919060010190610462565b5b50905061048b91906104bb565b5090565b6104b891905b808211156104b457600081816104ab91906104e0565b50600101610495565b5090565b90565b6104dd91905b808211156104d95760008160009055506001016104c1565b5090565b90565b50805460018160011615610100020316600290046000825580601f106105065750610525565b601f01602090049060005260206000209081019061052491906104bb565b5b50565b600061053483836105b1565b905092915050565b600061054782610616565b6105518185610639565b9350836020820285016105638561060c565b8060005b8581101561059f57848403895281516105808582610528565b945061058b8361062c565b925060208a01995050600181019050610567565b50829750879550505050505092915050565b60006105bc82610621565b6105c68185610644565b93506105d6818560208601610655565b6105df81610688565b840191505092915050565b60006020820190508181036000830152610604818461053c565b905092915050565b6000819050919050565b6000600a9050919050565b600081519050919050565b6000602082019050919050565b600081905092915050565b600082825260208201905092915050565b60005b83811015610673578082015181840152602081019050610658565b83811115610682576000848401525b50505050565b6000601f19601f830116905091905056fea365627a7a723158207f5e128a8889738c5420c51735efd1e53a18841a63ea821c18efd413ae4187106c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80630742da0014610030575b600080fd5b61003861004e565b60405161004591906105ea565b60405180910390f35b610056610394565b6040518061014001604052806040518060400160405280600381526020017f6f6e65000000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600381526020017f74776f000000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600581526020017f746872656500000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600481526020017f666f75720000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600481526020017f666976650000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600381526020017f736978000000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600581526020017f736576656e00000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600581526020017f656967687400000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600481526020017f6e696e650000000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600381526020017f74656e0000000000000000000000000000000000000000000000000000000000815250815250600090600a6102be9291906103bc565b506000600a80602002604051908101604052809291906000905b8282101561038b578382018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103775780601f1061034c57610100808354040283529160200191610377565b820191906000526020600020905b81548152906001019060200180831161035a57829003601f168201915b5050505050815260200190600101906102d8565b50505050905090565b604051806101400160405280600a905b60608152602001906001900390816103a45790505090565b82600a81019282156103fe579160200282015b828111156103fd5782518290805190602001906103ed92919061040f565b50916020019190600101906103cf565b5b50905061040b919061048f565b5090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061045057805160ff191683800117855561047e565b8280016001018555821561047e579182015b8281111561047d578251825591602001919060010190610462565b5b50905061048b91906104bb565b5090565b6104b891905b808211156104b457600081816104ab91906104e0565b50600101610495565b5090565b90565b6104dd91905b808211156104d95760008160009055506001016104c1565b5090565b90565b50805460018160011615610100020316600290046000825580601f106105065750610525565b601f01602090049060005260206000209081019061052491906104bb565b5b50565b600061053483836105b1565b905092915050565b600061054782610616565b6105518185610639565b9350836020820285016105638561060c565b8060005b8581101561059f57848403895281516105808582610528565b945061058b8361062c565b925060208a01995050600181019050610567565b50829750879550505050505092915050565b60006105bc82610621565b6105c68185610644565b93506105d6818560208601610655565b6105df81610688565b840191505092915050565b60006020820190508181036000830152610604818461053c565b905092915050565b6000819050919050565b6000600a9050919050565b600081519050919050565b6000602082019050919050565b600081905092915050565b600082825260208201905092915050565b60005b83811015610673578082015181840152602081019050610658565b83811115610682576000848401525b50505050565b6000601f19601f830116905091905056fea365627a7a723158207f5e128a8889738c5420c51735efd1e53a18841a63ea821c18efd413ae4187106c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "915:586:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;915:586:0;;;;;;;",
+  "deployedSourceMap": "915:586:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;915:586:0;;;;;;;;;;;;;;;;;;;1293:195;;;:::i;:::-;;;;;;;;;;;;;;;;;1328:17;;:::i;:::-;1355:87;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:13;:87;;;;;;;:::i;:::-;;1458:13;1451:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1293:195;:::o;915:586::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;6:181:-1:-;;119:62;177:3;169:6;119:62;;;105:76;;98:89;;;;;228:890;;383:59;436:5;383:59;;;455:91;539:6;534:3;455:91;;;448:98;;569:3;611:4;603:6;599:17;594:3;590:27;638:61;693:5;638:61;;;719:7;747:1;732:347;757:6;754:1;751:13;732:347;;;819:9;813:4;809:20;804:3;797:33;864:6;858:13;886:76;957:4;942:13;886:76;;;878:84;;979:65;1037:6;979:65;;;969:75;;1067:4;1062:3;1058:14;1051:21;;789:290;779:1;776;772:9;767:14;;732:347;;;736:14;1092:4;1085:11;;1109:3;1102:10;;362:756;;;;;;;;;;1126:319;;1224:35;1253:5;1224:35;;;1271:61;1325:6;1320:3;1271:61;;;1264:68;;1337:52;1382:6;1377:3;1370:4;1363:5;1359:16;1337:52;;;1410:29;1432:6;1410:29;;;1405:3;1401:39;1394:46;;1204:241;;;;;;1452:381;;1630:2;1619:9;1615:18;1607:26;;1680:9;1674:4;1670:20;1666:1;1655:9;1651:17;1644:47;1705:118;1818:4;1809:6;1705:118;;;1697:126;;1601:232;;;;;1840:104;;1931:3;1923:11;;1917:27;;;;1951:115;;2052:4;2042:14;;2030:36;;;;2073:118;;2163:5;2157:12;2147:22;;2128:63;;;;2198:113;;2301:4;2296:3;2292:14;2284:22;;2278:33;;;;2319:147;;2457:3;2442:18;;2435:31;;;;;2475:153;;2580:6;2575:3;2568:19;2617:4;2612:3;2608:14;2593:29;;2561:67;;;;;2637:268;2702:1;2709:101;2723:6;2720:1;2717:13;2709:101;;;2799:1;2794:3;2790:11;2784:18;2780:1;2775:3;2771:11;2764:39;2745:2;2742:1;2738:10;2733:15;;2709:101;;;2825:6;2822:1;2819:13;2816:2;;;2890:1;2881:6;2876:3;2872:16;2865:27;2816:2;2686:219;;;;;2913:97;;3001:2;2997:7;2992:2;2985:5;2981:14;2977:28;2967:38;;2961:49;;;",
+  "source": "// 오늘 할 일 \r\n//  - 가쟈 디앱 만들기 \r\n//  - 기능 1 : 10개의 아이템이 존재하고 뽑기 1회 당 정해진 가스를 소모하면서 \r\n//랜덤 확률로 아이템을 획득한다.\r\n\r\n//  - 기능 2 : 뽑기 5회마다 1회의 보너스 기회를 준다..\r\n// (지금까지 뽑기 내역은 이벤트를 통해 처리한다.)\r\n\r\n\r\n//투표랑 마켓거래랑 구조는 비슷하다고 생각해도 될듯\r\n//기존에 10개의 아이템이 등록되어 있음\r\n//누르면 뽑을 수 있음 (1회당 가스소비)\r\n//아이템은 렌덤하게 선택됨\r\n//뽑기를 5번하면 1번도 기회받을 수 있음 (저번에 투표를 1번만하게 막는거 다 리액트에서 막았는데\r\n//뽑기 내역을 이벤트통해 처리하면 솔리디티에서 다뤄야하는건가...)\r\n\r\n// // SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <8.10.0;\r\npragma experimental ABIEncoderV2;\r\n\r\ncontract Gacha{\r\n    //기존에 10개 아이템, 뽑는가스쓰는사람주소, 뽑기내역 저장?\r\n    \r\n\r\n    //기존 아이템배열\r\n    // string GachaItem;\r\n    string[10] GachaItemList;\r\n    // mapping(string => bool) GachaItemExists;\r\n\r\n    // constructor() {\r\n    //     GachaItemlist = GachaItem.push();        \r\n    // }\r\n\r\n    //아이템 보여주는 애\r\n    function ShowItem() public returns(string[10] memory){\r\n      GachaItemList  = [\"one\",\"two\",\"three\",\"four\",\"five\",\"six\",\"seven\",\"eight\",\"nine\",\"ten\"];\r\n      return GachaItemList;\r\n       \r\n    }      \r\n\r\n\r\n}",
+  "sourcePath": "C:\\Users\\syusm\\OneDrive\\문서\\GitHub\\solidity\\GachaDapp\\contracts\\Gacha.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Gacha.sol",
+    "exportedSymbols": {
+      "Gacha": [
+        31
+      ]
+    },
+    "id": 32,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "8.10",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "843:33:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "878:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 31,
+        "linearizedBaseContracts": [
+          31
+        ],
+        "name": "Gacha",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 6,
+            "name": "GachaItemList",
+            "nodeType": "VariableDeclaration",
+            "scope": 31,
+            "src": "1087:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_string_storage_$10_storage",
+              "typeString": "string[10]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 3,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "1087:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "id": 5,
+              "length": {
+                "argumentTypes": null,
+                "hexValue": "3130",
+                "id": 4,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "1094:2:0",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_10_by_1",
+                  "typeString": "int_const 10"
+                },
+                "value": "10"
+              },
+              "nodeType": "ArrayTypeName",
+              "src": "1087:10:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_string_storage_$10_storage_ptr",
+                "typeString": "string[10]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 29,
+              "nodeType": "Block",
+              "src": "1346:142:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 13,
+                      "name": "GachaItemList",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "1355:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_string_storage_$10_storage",
+                        "typeString": "string storage ref[10] storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "components": [
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "6f6e65",
+                          "id": 14,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1373:5:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_23dc111d7c3ad1df9806ce1e8eb4f55f57dba117339c545e7593d1f6c3b02662",
+                            "typeString": "literal_string \"one\""
+                          },
+                          "value": "one"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "74776f",
+                          "id": 15,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1379:5:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_332c39dcd398ea34a48b871898d589f55fc4c7bce00562fb670c972e7e1b0720",
+                            "typeString": "literal_string \"two\""
+                          },
+                          "value": "two"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "7468726565",
+                          "id": 16,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1385:7:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_89027a4db8d1d3a0787296eb1553fba0dc506f981f9697f1a66994c458d392b5",
+                            "typeString": "literal_string \"three\""
+                          },
+                          "value": "three"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "666f7572",
+                          "id": 17,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1393:6:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_923481f620daa64206c8ec933566224c317f9deb5e271ddf71b4f1e7de758f67",
+                            "typeString": "literal_string \"four\""
+                          },
+                          "value": "four"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "66697665",
+                          "id": 18,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1400:6:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_3ce43ebc97d970d375329ca8b7784ae92a9c9034e23f6e5fcbd9b51d8249b6f3",
+                            "typeString": "literal_string \"five\""
+                          },
+                          "value": "five"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "736978",
+                          "id": 19,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1407:5:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_c2c8651ce9ad725a399bfe851a6bb59937357e76f9e946b0a17c7752b331dedb",
+                            "typeString": "literal_string \"six\""
+                          },
+                          "value": "six"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "736576656e",
+                          "id": 20,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1413:7:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_11b225fe8d80e492d300a2f2da631db014203e1d17c046808254d52531743cac",
+                            "typeString": "literal_string \"seven\""
+                          },
+                          "value": "seven"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "6569676874",
+                          "id": 21,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1421:7:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_f055263b3393b8ea5c2dbe8c636cd10a182ac0d52758e14434c1d3aa4160483f",
+                            "typeString": "literal_string \"eight\""
+                          },
+                          "value": "eight"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "6e696e65",
+                          "id": 22,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1429:6:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_a4cff8d247f787b2d5d7fe307ae947ebb7b11f419f676660fc4b5e3c8f00e2f5",
+                            "typeString": "literal_string \"nine\""
+                          },
+                          "value": "nine"
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "74656e",
+                          "id": 23,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1436:5:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_b1f7c7e256d1b76752bd5a5846cba76043d154f560261a676940aedb2acd2503",
+                            "typeString": "literal_string \"ten\""
+                          },
+                          "value": "ten"
+                        }
+                      ],
+                      "id": 24,
+                      "isConstant": false,
+                      "isInlineArray": true,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "TupleExpression",
+                      "src": "1372:70:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_string_memory_$10_memory_ptr",
+                        "typeString": "string memory[10] memory"
+                      }
+                    },
+                    "src": "1355:87:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$10_storage",
+                      "typeString": "string storage ref[10] storage ref"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1355:87:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 27,
+                    "name": "GachaItemList",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 6,
+                    "src": "1458:13:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$10_storage",
+                      "typeString": "string storage ref[10] storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 12,
+                  "id": 28,
+                  "nodeType": "Return",
+                  "src": "1451:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 30,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "ShowItem",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1310:2:0"
+            },
+            "returnParameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 30,
+                  "src": "1328:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_string_memory_$10_memory_ptr",
+                    "typeString": "string[10]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 8,
+                      "name": "string",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1328:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage_ptr",
+                        "typeString": "string"
+                      }
+                    },
+                    "id": 10,
+                    "length": {
+                      "argumentTypes": null,
+                      "hexValue": "3130",
+                      "id": 9,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1335:2:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_10_by_1",
+                        "typeString": "int_const 10"
+                      },
+                      "value": "10"
+                    },
+                    "nodeType": "ArrayTypeName",
+                    "src": "1328:10:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_string_storage_$10_storage_ptr",
+                      "typeString": "string[10]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1327:19:0"
+            },
+            "scope": 31,
+            "src": "1293:195:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 32,
+        "src": "915:586:0"
+      }
+    ],
+    "src": "843:658:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Gacha.sol",
+      "exportedSymbols": {
+        "Gacha": [
+          31
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".21",
+            "<",
+            "8.10",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "843:33:0"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 2,
+        "name": "PragmaDirective",
+        "src": "878:33:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            31
+          ],
+          "name": "Gacha",
+          "scope": 32
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "GachaItemList",
+              "scope": 31,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string[10]",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "string[10]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 3,
+                    "name": "ElementaryTypeName",
+                    "src": "1087:6:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "3130",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "int_const 10",
+                      "value": "10"
+                    },
+                    "id": 4,
+                    "name": "Literal",
+                    "src": "1094:2:0"
+                  }
+                ],
+                "id": 5,
+                "name": "ArrayTypeName",
+                "src": "1087:10:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "1087:24:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "ShowItem",
+              "scope": 31,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "1310:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 30,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string[10]",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "type": "string[10]"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "string",
+                              "type": "string"
+                            },
+                            "id": 8,
+                            "name": "ElementaryTypeName",
+                            "src": "1328:6:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "3130",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 10",
+                              "value": "10"
+                            },
+                            "id": 9,
+                            "name": "Literal",
+                            "src": "1335:2:0"
+                          }
+                        ],
+                        "id": 10,
+                        "name": "ArrayTypeName",
+                        "src": "1328:10:0"
+                      }
+                    ],
+                    "id": 11,
+                    "name": "VariableDeclaration",
+                    "src": "1328:17:0"
+                  }
+                ],
+                "id": 12,
+                "name": "ParameterList",
+                "src": "1327:19:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string storage ref[10] storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 6,
+                              "type": "string storage ref[10] storage ref",
+                              "value": "GachaItemList"
+                            },
+                            "id": 13,
+                            "name": "Identifier",
+                            "src": "1355:13:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isInlineArray": true,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "type": "string memory[10] memory"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "6f6e65",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"one\"",
+                                  "value": "one"
+                                },
+                                "id": 14,
+                                "name": "Literal",
+                                "src": "1373:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "74776f",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"two\"",
+                                  "value": "two"
+                                },
+                                "id": 15,
+                                "name": "Literal",
+                                "src": "1379:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "7468726565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"three\"",
+                                  "value": "three"
+                                },
+                                "id": 16,
+                                "name": "Literal",
+                                "src": "1385:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "666f7572",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"four\"",
+                                  "value": "four"
+                                },
+                                "id": 17,
+                                "name": "Literal",
+                                "src": "1393:6:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "66697665",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"five\"",
+                                  "value": "five"
+                                },
+                                "id": 18,
+                                "name": "Literal",
+                                "src": "1400:6:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "736978",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"six\"",
+                                  "value": "six"
+                                },
+                                "id": 19,
+                                "name": "Literal",
+                                "src": "1407:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "736576656e",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"seven\"",
+                                  "value": "seven"
+                                },
+                                "id": 20,
+                                "name": "Literal",
+                                "src": "1413:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "6569676874",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"eight\"",
+                                  "value": "eight"
+                                },
+                                "id": 21,
+                                "name": "Literal",
+                                "src": "1421:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "6e696e65",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"nine\"",
+                                  "value": "nine"
+                                },
+                                "id": 22,
+                                "name": "Literal",
+                                "src": "1429:6:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "74656e",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "string",
+                                  "type": "literal_string \"ten\"",
+                                  "value": "ten"
+                                },
+                                "id": 23,
+                                "name": "Literal",
+                                "src": "1436:5:0"
+                              }
+                            ],
+                            "id": 24,
+                            "name": "TupleExpression",
+                            "src": "1372:70:0"
+                          }
+                        ],
+                        "id": 25,
+                        "name": "Assignment",
+                        "src": "1355:87:0"
+                      }
+                    ],
+                    "id": 26,
+                    "name": "ExpressionStatement",
+                    "src": "1355:87:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 12
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 6,
+                          "type": "string storage ref[10] storage ref",
+                          "value": "GachaItemList"
+                        },
+                        "id": 27,
+                        "name": "Identifier",
+                        "src": "1458:13:0"
+                      }
+                    ],
+                    "id": 28,
+                    "name": "Return",
+                    "src": "1451:20:0"
+                  }
+                ],
+                "id": 29,
+                "name": "Block",
+                "src": "1346:142:0"
+              }
+            ],
+            "id": 30,
+            "name": "FunctionDefinition",
+            "src": "1293:195:0"
+          }
+        ],
+        "id": 31,
+        "name": "ContractDefinition",
+        "src": "915:586:0"
+      }
+    ],
+    "id": 32,
+    "name": "SourceUnit",
+    "src": "843:658:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-03-02T05:28:04.844Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
