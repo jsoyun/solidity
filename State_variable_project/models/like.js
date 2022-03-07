@@ -1,16 +1,15 @@
 const Sequelize = require("sequelize");
 
-module.exports = class User extends Sequelize.Model {
+module.exports = class Like extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
       {
-        name: {
-          type: Sequelize.STRING(45),
+        Artist_like: {
+          type: Sequelize.INTEGER,
           allowNull: false,
-          unique: true,
         },
-        nation: {
-          type: Sequelize.STRING(45),
+        Music_like: {
+          type: Sequelize.INTEGER,
           allowNull: false,
         },
       },
@@ -18,8 +17,8 @@ module.exports = class User extends Sequelize.Model {
         sequelize,
         timestamps: false,
         underscored: false,
-        modelName: "User",
-        tableName: "users",
+        modelName: "Like",
+        tableName: "likes",
         paranoid: false,
         charset: "utf8",
         collate: "ut8_general_ci",
@@ -27,6 +26,9 @@ module.exports = class User extends Sequelize.Model {
     );
   }
   static associate(db) {
-    db.User.hasMany(db.Like, { foreignKey: "UserLike", sourceKey: "idUser" });
+    db.Like.belongsTo(db.User, {
+      foreignKey: "UserLike",
+      tartgetKey: "idLike",
+    });
   }
 };
