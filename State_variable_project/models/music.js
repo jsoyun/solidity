@@ -1,4 +1,5 @@
 const Sequelize = require("sequelize");
+
 module.exports = class Music extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
@@ -67,9 +68,10 @@ module.exports = class Music extends Sequelize.Model {
     );
   }
   static associate(db) {
-    db.Music.belongsTo(db.Artist, {
+    Music.belongsTo(db.Artist, {
       foreignKey: "artist_idArtist",
-      sourceKey: "artist_idArtist_artist",
+      // sourceKey: "artist_idArtist_artist",
+      // sourceKey: "id",
     });
   }
 };

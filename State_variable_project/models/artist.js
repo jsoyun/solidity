@@ -53,13 +53,15 @@ module.exports = class Artist extends Sequelize.Model {
     );
   }
   static associate(db) {
-    db.Artist.hasMany(db.Music, {
+    Artist.hasMany(db.Music, {
       foreignKey: "artist_idArtist",
-      sourceKey: "musics",
+      // sourceKey: "musics",
+      // sourceKey: "id",
     });
-    db.Artist.belongsTo(db.User, {
+    Artist.belongsTo(db.User, {
       foreignKey: "user_idUser",
-      sourceKey: "user_idUser_user",
+      // sourceKey: "user_idUser_user",
+      // sourceKey: "id",
     });
   }
 };
