@@ -4,12 +4,27 @@ module.exports = class User extends Sequelize.Model {
   static init(sequelize) {
     return super.init(
       {
+        // idUser: {
+        //   type: Sequelize.INTEGER,
+        //   allowNull: false,
+        //   // unique: true,
+        //   primaryKey: true,
+        //   autoIncrement: true,
+        // },
         name: {
           type: Sequelize.STRING(45),
           allowNull: false,
-          unique: true,
+          // unique: true,
         },
         nation: {
+          type: Sequelize.STRING(45),
+          allowNull: false,
+        },
+        favor_genre: {
+          type: Sequelize.STRING(45),
+          allowNull: true,
+        },
+        address: {
           type: Sequelize.STRING(45),
           allowNull: false,
         },
@@ -17,9 +32,9 @@ module.exports = class User extends Sequelize.Model {
       {
         sequelize,
         timestamps: false,
-        underscored: false,
+        underscored: true,
         modelName: "User",
-        tableName: "users",
+        tableName: "user",
         paranoid: false,
         charset: "utf8",
         collate: "ut8_general_ci",
@@ -27,6 +42,6 @@ module.exports = class User extends Sequelize.Model {
     );
   }
   static associate(db) {
-    db.User.hasMany(db.Like, { foreignKey: "UserLike", sourceKey: "idUser" });
+    // db.User.hasMany(db.Like, { foreignKey: "UserLike", sourceKey: "idUser" });
   }
 };
