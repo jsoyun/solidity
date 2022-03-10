@@ -1,32 +1,56 @@
-const Sequelize = require("sequelize");
-
-module.exports = class Artist extends Sequelize.Model {
-  static init(sequelize) {
-    return super.init(
+const Sequelize = require('sequelize');
+module.exports = function(sequelize, DataTypes) {
+  return sequelize.define('artist', {
+    idArtist: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true
+    },
+    nickname: {
+      type: DataTypes.STRING(45),
+      allowNull: false,
+      unique: "nickname_UNIQUE"
+    },
+    AuctionRight: {
+      type: DataTypes.STRING(45),
+      allowNull: true
+    },
+    user_idUser: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'user',
+        key: 'id'
+      }
+    }
+  }, {
+    sequelize,
+    tableName: 'artist',
+    timestamps: false,
+    indexes: [
       {
-        nickname: {
-          type: Sequelize.STRING(45),
-          allowNull: true,
-          unique: true,
-        },
-        AuctionRight: {
-          type: Sequelize.STRING(45),
-          allowNull: false,
-        },
+        name: "PRIMARY",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "idArtist" },
+        ]
       },
       {
-        sequelize,
-        timestamps: false,
-        underscored: true,
-        modelName: "Artist",
-        tableName: "artist",
-        paranoid: false,
-        // charset: "utf8",
-        // collate: "ut8_general_ci",
-      }
-    );
-  }
-  static associate(db) {
-    // db.Artist.hasMany(db.user, { foreignKey: "fk_artist_user1", sourceKey: "idUser" });
-  }
+        name: "nickname_UNIQUE",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "nickname" },
+        ]
+      },
+      {
+        name: "fk_artist_user1_idx",
+        using: "BTREE",
+        fields: [
+          { name: "user_idUser" },
+        ]
+      },
+    ]
+  });
 };

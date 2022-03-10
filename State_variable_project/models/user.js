@@ -1,47 +1,41 @@
-const Sequelize = require("sequelize");
-
-module.exports = class User extends Sequelize.Model {
-  static init(sequelize) {
-    return super.init(
+const Sequelize = require('sequelize');
+module.exports = function(sequelize, DataTypes) {
+  return sequelize.define('user', {
+    id: {
+      autoIncrement: true,
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true
+    },
+    name: {
+      type: DataTypes.STRING(45),
+      allowNull: false
+    },
+    nation: {
+      type: DataTypes.STRING(45),
+      allowNull: false
+    },
+    favor_genre: {
+      type: DataTypes.STRING(45),
+      allowNull: true
+    },
+    address: {
+      type: DataTypes.STRING(45),
+      allowNull: false
+    }
+  }, {
+    sequelize,
+    tableName: 'user',
+    timestamps: false,
+    indexes: [
       {
-        // idUser: {
-        //   type: Sequelize.INTEGER,
-        //   allowNull: false,
-        //   // unique: true,
-        //   primaryKey: true,
-        //   autoIncrement: true,
-        // },
-        name: {
-          type: Sequelize.STRING(45),
-          allowNull: false,
-          // unique: true,
-        },
-        nation: {
-          type: Sequelize.STRING(45),
-          allowNull: false,
-        },
-        favor_genre: {
-          type: Sequelize.STRING(45),
-          allowNull: true,
-        },
-        address: {
-          type: Sequelize.STRING(45),
-          allowNull: false,
-        },
+        name: "PRIMARY",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "id" },
+        ]
       },
-      {
-        sequelize,
-        timestamps: false,
-        underscored: true,
-        modelName: "User",
-        tableName: "user",
-        paranoid: false,
-        charset: "utf8",
-        collate: "ut8_general_ci",
-      }
-    );
-  }
-  static associate(db) {
-    // db.User.hasMany(db.Like, { foreignKey: "UserLike", sourceKey: "idUser" });
-  }
+    ]
+  });
 };
