@@ -42,10 +42,10 @@ module.exports = class User extends Sequelize.Model {
     );
   }
   static associate(db) {
-    User.hasMany(db.Artist, {
+    User.hasOne(db.Artist, {
       foreignKey: "user_idUser",
       // sourceKey: "artists",
-      // sourceKey: "id",
+      sourceKey: "id",
     });
   }
 };

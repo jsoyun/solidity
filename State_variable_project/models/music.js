@@ -46,6 +46,10 @@ module.exports = class Music extends Sequelize.Model {
           type: Sequelize.INTEGER,
           allowNull: true,
         },
+        LikeMusic: {
+          type: Sequelize.INTEGER,
+          allowNull: true,
+        },
       },
       {
         sequelize,
@@ -71,7 +75,7 @@ module.exports = class Music extends Sequelize.Model {
     Music.belongsTo(db.Artist, {
       foreignKey: "artist_idArtist",
       // sourceKey: "artist_idArtist_artist",
-      // sourceKey: "id",
+      sourceKey: "id",
     });
   }
 };
